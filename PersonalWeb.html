@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lady Denise C. Manalo - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    
+    <section class="intro">
+      <h1>Welcome! This is My Portfolio and Personal Website</h1>
+    </section>
+
+    <img src="pics/denise.jpeg" alt="Lady Denise" class="profile-img">
+    <p>Hello! I’m <b>Lady Denise C. Manalo</b>, a BS Computer Science student at Cavite State University Imus Campus.</p>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#myself">Myself</a>
+      <a href="#family">My Family</a>
+      <a href="#favorites">Favorites</a>
+      <a href="#resume">Resume</a>
+    </nav>
+  </header>
+
+  <main>
+ 
+    <section id="home">
+      <h2>Home</h2>
+      <p>This is my personal website where I share about myself, my resume, my family, my favorites, and my achievements.</p>
+      <a href="PersonalWeb.html" class="preview-link">View Full Home Page</a>
+    </section>
+
+    <section id="myself">
+      <h2>About Myself</h2>
+      <img src="pics/angel.jpg" alt="Denise" class="section-img">
+      <p> I consider myself an introverted person, but once I get comfortable, I can talk and connect with people easily.</p>
+      <a href="myself.html" class="preview-link">Read More About Me</a>
+    </section>
+
+    <section id="family">
+      <h2>My Family</h2>
+      <img src="pics/manalo.jpg" alt="Parents" class="section-img">
+      <p>This is my family, the Manalo Family. We are a Christian family consisting of seven members including me.</p>
+    <a href="myfamily.html" class="preview-link">Read More About My family</a>
+    </section>
+
+    <section id="favorites">
+      <h2>My Favorites</h2>
+      <img src="pics/sinigang.jpeg" alt="Sinigang" class="section-img">
+      <p>Explore my favorite foods, fruits, and movies!</p>
+      <a href="zfavorites.html" class="preview-link">Explore All Favorites</a>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <img src="pics/rezume.jpeg" alt="Resume Photo" class="section-img">
+      <p>Check out my educational background, skills, and achievements.</p>
+      <a href="zfavorites.html" class="preview-link">View Full Resume</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Lady Denise C. Manalo | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        const href = link.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          document.querySelector(href).scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

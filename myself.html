@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Lady Denise C. Manalo</title>
+    <style>
+        #intro p {
+            text-align: justify;
+            margin: 0 auto;
+            width: 200%;
+
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+        }
+
+        #childhood .gallery,
+        #recent .gallery,
+        #Hobbies .gallery,
+        #achievements .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            justify-items: center;
+            text-align: center;
+            list-style: none;
+            padding: 0;
+        }
+
+        .gallery img {
+            width: 450px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery p {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #000000;
+        }
+
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        .nav-links {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            margin: 0 10px;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="intro" class="intro">
+        <center><img src="pics/denise.jpeg" width="250" height="200" style="border-radius:10px;"></center>
+        <h2>ABOUT MYSELF</h2>
+        <p style="text-align: center; max-width: 700px; margin: auto;">
+            My name is Lady Denise C. Manalo, a BS Computer Science student at Cavite State University Imus Campus.
+            I consider myself an introverted person, but once I get comfortable, I can talk and connect with people
+            easily.
+            I am also the eldest daughter among my siblings, which has taught me responsibility, patience, and
+            leadership from an early age.
+        </p>
+    </div>
+    <br>
+    <div class="nav-links">
+        <a href="#hobbies">Hobbies</a> |
+        <a href="#achievements">Achievements</a> |
+        <a href="#childhood">Childhood Pics</a> |
+        <a href="#recent">Recent Pics</a>
+    </div>
+
+    <hr>
+
+    <div id="Hobbies" class="Hobbies">
+        <h2>HOBBIES</h2>
+        <br>
+        <div class="gallery">
+            <div>
+                <img src="pics/watching.jpg" alt="watching">
+                <p>Watching Movies/Series</p>
+            </div>
+            <div>
+                <img src="pics/travel.jpg" alt="traveling">
+                <p>Traveling</p>
+            </div>
+            <div>
+                <img src="pics/photography.jpeg" alt="Photography">
+                <p>Photography</p>
+            </div>
+            <div>
+                <img src="pics/plant.png" alt="Planting">
+                <p>Planting</p>
+            </div>
+            <div>
+                <img src="pics/cooking.jpg" alt="Cooking">
+                <p>Cooking</p>
+            </div>
+            <div>
+                <img src="pics/chess.jpeg" alt="Playing Chess">
+                <p>Playing Chess</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="achievements" class="achievements">
+        <h2>ACHIEVEMENTS</h2>
+        <br>
+        <div class="gallery">
+            <div>
+                <img src="pics/award.jpg" alt="TechnoInnovation Award">
+                <p>Awards in filmmaking contest</p>
+            </div>
+            <div>
+                <img src="pics/filmmaking.jpg" alt="Filmmaking Award">
+                <p>Best in Filmmaking</p>
+            </div>
+            <div>
+                <img src="pics/medal.jpeg" alt="Graduation with Honors">
+                <p>Graduated with High Honors in SHS</p>
+            </div>
+            <div>
+                <img src="pics/emtech.png" alt="Graduation with Honors">
+                <p> Best in TechnoInnovation</p>
+            </div>
+            <div>
+                <img src="pics/research.jpeg" alt="Graduation with Honors">
+                <p> Research study successfully defended</p>
+            </div>
+            <div>
+                <img src="pics/entrep.jpeg" alt="Graduation with Honors">
+                <p> Business Expo leader and achieved top sales</p>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="childhood" class="childhood">
+        <h2>CHILDHOOD PICS</h2>
+        <br>
+        <div class="gallery">
+            <div>
+                <img src="pics/angel.jpg" alt="Kinder Cosplay">
+                <p>Kinder days: I cosplayed as Mama Mary</p>
+            </div>
+            <div>
+                <img src="pics/buwanngwika.jpg" alt="Buwan ng Wika">
+                <p>Elementary Buwan ng Wika costume parade</p>
+            </div>
+            <div>
+                <img src="pics/grads.jpeg" alt="Graduation">
+                <p>Elementary graduation</p>
+            </div>
+            <div>
+                <img src="pics/beach.jpg" alt="Beach Day">
+                <p>Beach days, August 26, 2013</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div id="recent" class="recent">
+            <h2>RECENT PICS</h2>
+            <br>
+            <div class="gallery">
+                <div>
+                    <img src="pics/classpic.jpg" alt="Kinder Cosplay">
+                    <p> BSCS 1A </p>
+                </div>
+                <div>
+                    <img src="pics/group.jpg" alt="Buwan ng Wika">
+                    <p>A group photo with my girl friends</p>
+                </div>
+                <div>
+                    <img src="pics/shsgrad.jpeg" alt="Graduation">
+                    <p> Senior High School graduation</p>
+                </div>
+                <div>
+                    <img src="pics/shspic.jpeg" alt="shs">
+                    <p>A photo taken on our last day of Senior High School
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
